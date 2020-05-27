@@ -93,6 +93,7 @@ def get_wav_samples(filename):
     to BASE_SAMPLE_RATE.
     Also returns the average sample amplitude.
     """
+    print(filename)
     wav_file = wave.open(filename, 'r')
     sample_width = wav_file.getsampwidth()
     sample_count = wav_file.getnframes()
